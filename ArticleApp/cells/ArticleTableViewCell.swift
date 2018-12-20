@@ -9,7 +9,9 @@
 import UIKit
 
 class ArticleTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var ArticleImageView: UIImageView!
+    
+    @IBOutlet weak var titleLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

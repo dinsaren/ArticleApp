@@ -1,21 +1,101 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ArticleTableViewCell" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticleTableViewCell" rowHeight="116" id="KGk-i7-Jjw" customClass="ArticleTableViewCell" customModule="ArticleApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="115.5"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="aSf-OK-Jj5">
+                        <rect key="frame" x="5" y="5" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="WmT-EW-ncT"/>
+                            <constraint firstAttribute="width" constant="100" id="cgN-e1-AGv"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ពិធីបើសម្ពាធ ទីក្រុង​ហេងហេង" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrZ-av-XM6">
+                        <rect key="frame" x="110" y="7" width="200" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="4ta-zk-PCT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-turn-filled-30" translatesAutoresizingMaskIntoConstraints="NO" id="Wvk-Qo-BnY">
+                        <rect key="frame" x="295" y="90" width="20" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="oQg-i2-pwA"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="១៥ ធ្នូ ១៨" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogx-le-E10">
+                        <rect key="frame" x="181" y="90" width="48" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-bookmark-30" translatesAutoresizingMaskIntoConstraints="NO" id="rmI-s1-FQG">
+                        <rect key="frame" x="272" y="92" width="20" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="DeU-pM-hwb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="សារ៉ែន" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qi3-jt-sNM">
+                        <rect key="frame" x="119" y="93" width="38" height="9"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="9" id="78k-Ts-9RY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Wvk-Qo-BnY" secondAttribute="trailing" constant="5" id="2Ez-ym-jLI"/>
+                    <constraint firstItem="ogx-le-E10" firstAttribute="bottom" secondItem="aSf-OK-Jj5" secondAttribute="bottom" id="2xk-z9-WY3"/>
+                    <constraint firstItem="lrZ-av-XM6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="8VS-Zo-KeK"/>
+                    <constraint firstItem="ogx-le-E10" firstAttribute="leading" secondItem="qi3-jt-sNM" secondAttribute="trailing" constant="24" id="D2E-4r-gjo"/>
+                    <constraint firstItem="rmI-s1-FQG" firstAttribute="centerY" secondItem="Wvk-Qo-BnY" secondAttribute="centerY" id="DyN-td-Hdn"/>
+                    <constraint firstAttribute="trailing" secondItem="lrZ-av-XM6" secondAttribute="trailing" constant="5" id="ELu-Qy-frm"/>
+                    <constraint firstAttribute="bottom" secondItem="aSf-OK-Jj5" secondAttribute="bottom" constant="10.5" id="HX2-VV-xeo"/>
+                    <constraint firstItem="qi3-jt-sNM" firstAttribute="top" secondItem="lrZ-av-XM6" secondAttribute="bottom" constant="57" id="RLZ-Ga-EDl"/>
+                    <constraint firstItem="qi3-jt-sNM" firstAttribute="centerY" secondItem="ogx-le-E10" secondAttribute="centerY" id="Rql-wm-rRF"/>
+                    <constraint firstItem="qi3-jt-sNM" firstAttribute="leading" secondItem="aSf-OK-Jj5" secondAttribute="trailing" constant="14" id="TXw-Gc-dGu"/>
+                    <constraint firstItem="ogx-le-E10" firstAttribute="bottom" secondItem="Wvk-Qo-BnY" secondAttribute="bottom" id="Ufn-6C-bvg"/>
+                    <constraint firstItem="aSf-OK-Jj5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="VMg-XX-jYQ"/>
+                    <constraint firstItem="aSf-OK-Jj5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="X5W-7u-nat"/>
+                    <constraint firstItem="ogx-le-E10" firstAttribute="top" secondItem="lrZ-av-XM6" secondAttribute="bottom" constant="54" id="XLY-Lz-t5F"/>
+                    <constraint firstItem="ogx-le-E10" firstAttribute="top" secondItem="Wvk-Qo-BnY" secondAttribute="top" id="Y2d-Fs-9xq"/>
+                    <constraint firstItem="lrZ-av-XM6" firstAttribute="leading" secondItem="aSf-OK-Jj5" secondAttribute="trailing" constant="5" id="ZEh-Jw-jIo"/>
+                    <constraint firstItem="Wvk-Qo-BnY" firstAttribute="leading" secondItem="rmI-s1-FQG" secondAttribute="trailing" constant="3" id="kHM-ZR-cXz"/>
+                    <constraint firstItem="rmI-s1-FQG" firstAttribute="leading" secondItem="ogx-le-E10" secondAttribute="trailing" constant="43" id="nx3-s1-8NC"/>
+                    <constraint firstItem="rmI-s1-FQG" firstAttribute="top" secondItem="lrZ-av-XM6" secondAttribute="bottom" constant="56" id="ybt-cM-vt8"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ArticleImageView" destination="aSf-OK-Jj5" id="mbK-Zf-JmD"/>
+                <outlet property="titleLabel" destination="lrZ-av-XM6" id="PvL-13-STG"/>
+            </connections>
+            <point key="canvasLocation" x="-35.200000000000003" y="210.49475262368819"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="icons8-bookmark-30" width="180" height="180"/>
+        <image name="icons8-turn-filled-30" width="180" height="180"/>
+        <image name="profile" width="636" height="636"/>
+    </resources>
 </document>

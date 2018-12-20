@@ -9,22 +9,21 @@
 import UIKit
 
 class DetailArticleViewController: UIViewController {
-
+    @IBOutlet weak var articleTitleLabel: UILabel!
+    @IBOutlet weak var articleImageView: UIImageView!
+    @IBOutlet weak var articleDescriptionTextView: UITextView!
+    var articletitle : String?
+    var articleimgage : String?
+    var articledesc :String?
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let url = URL(string: "\(articleimgage!)")
+        articleImageView.kf.setImage(with: url)
+        articleTitleLabel.text = articletitle
+        articleDescriptionTextView.text = articledesc
+        
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
